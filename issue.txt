@@ -29,4 +29,13 @@ Watch Usage
 
  ## Fix
 
- To fix this issue, create `__tests__` directory under `src` and move `App.test.tsx` into that directory.
+To fix this issue ([fix branch](https://github.com/dfberry/create-react-app-typescript-jest-issue-1/tree/fix)):
+
+1. Create `__tests__` directory under `src`.
+1. Move `App.test.tsx` into that directory.
+1. Change `App.test.tsx` import statement:
+
+    ```
+    import App from '../App';
+    ```
+
